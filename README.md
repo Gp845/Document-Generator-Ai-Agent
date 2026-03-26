@@ -49,7 +49,7 @@ pip install -r requirements.txt
 
 ## ⚙️ Configuration
 
-The project requires four API keys. Get them from the respective providers.:
+The project requires four API keys. Get them from the respective providers. Make sure to write them in main_.py and docker-compose.yml:
 
 | Key | Where to get it |
 |---|---|
