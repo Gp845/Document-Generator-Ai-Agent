@@ -98,9 +98,7 @@ DESIGN PHILOSOPHY:
 """
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-#  FORMAT AGENT — Claude writes / revises the rendering code
-# ─────────────────────────────────────────────────────────────────────────────
+
 def call_format_agent(
     doc_type: str,
     context: str,
