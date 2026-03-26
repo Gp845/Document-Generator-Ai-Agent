@@ -65,7 +65,7 @@ The project requires four API keys. Get them from the respective providers.:
 ### Interactive agent (`main.py`)
 
 ```bash
-python main.py
+python main_.py
 ```
 
 The agent runs an interactive chat loop. Example prompts:
