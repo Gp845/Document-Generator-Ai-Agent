@@ -1,0 +1,5 @@
+google-genai
+requests
+python-pptx
+openpyxl
+reportlab
