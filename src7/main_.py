@@ -7,10 +7,11 @@ from google import genai
 from google.genai import types
 
 # ── API Keys ──────────────────────────────────────────────────────────────────
+# Write your api keys here
 os.environ["GOOGLE_API_KEY"] = ""
 PEXELS_API_KEY     = ""
 OPENROUTER_API_KEY = ""
-GROQ_API_KEY       = ""  # ← get free key at console.groq.com
+GROQ_API_KEY       = "" 
 
 gemini_client = genai.Client(api_key=os.environ["GOOGLE_API_KEY"])
 
