@@ -49,14 +49,7 @@ pip install -r requirements.txt
 
 ## ⚙️ Configuration
 
-The project requires four API keys. **Do not hardcode keys in source files** — use environment variables or a `.env` file instead:
-
-```bash
-export GOOGLE_API_KEY="your_google_api_key"
-export PEXELS_API_KEY="your_pexels_api_key"
-export OPENROUTER_API_KEY="your_openrouter_api_key"
-export GROQ_API_KEY="your_groq_api_key"
-```
+The project requires four API keys. Get them from the respective providers.:
 
 | Key | Where to get it |
 |---|---|
