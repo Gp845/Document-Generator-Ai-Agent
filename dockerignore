@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.env
+.env.*
+outputs/
+output_*.pptx
+output_*.xlsx
+output_*.pdf
+.git/
+.gitignore
+*.md

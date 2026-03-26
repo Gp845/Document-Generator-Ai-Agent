@@ -1,0 +1,23 @@
+services:
+  document-agent:
+    build: .
+    image: document-agent:latest
+
+    # Keep stdin open for the interactive prompt loop
+    stdin_open: true
+    tty: true
+
+    # ── API Keys ──────────────────────────────────────────────────────────────
+    # Replace the values below (or use a .env file alongside this compose file)
+    # so that secrets are NOT hardcoded in source code.
+    environment:
+      GOOGLE_API_KEY:      ${GOOGLE_API_KEY}
+      PEXELS_API_KEY:      ${PEXELS_API_KEY}
+      OPENROUTER_API_KEY:  ${OPENROUTER_API_KEY}
+      GROQ_API_KEY:        ${GROQ_API_KEY}
+
+    # ── Output files ──────────────────────────────────────────────────────────
+    # Generated .pptx / .xlsx / .pdf files are written to /app inside the
+    # container.  Mount a local folder to retrieve them from the host.
+    volumes:
+      - ./outputs:/app
