@@ -182,6 +182,3 @@ with open("report.pdf", "wb") as f:
 
 ---
 
-## 🔒 Security Note
-
-The repository should **never** contain hardcoded API keys. Move all keys to environment variables before committing to version control. Consider adding a `.env` file (with `python-dotenv`) and adding `.env` to your `.gitignore`.
