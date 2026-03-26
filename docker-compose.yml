@@ -1,0 +1,21 @@
+services:
+  document-agent:
+    build: .
+    image: document-agent:latest
+
+    # Keep stdin open for the interactive prompt loop
+    stdin_open: true
+    tty: true
+
+    # ── API Keys ──────────────────────────────────────────────────────────────
+    #Write you api keys here
+    environment:
+      GOOGLE_API_KEY:      
+      PEXELS_API_KEY:
+      OPENROUTER_API_KEY:  
+      GROQ_API_KEY:        
+    # ── Output files ──────────────────────────────────────────────────────────
+    # Generated .pptx / .xlsx / .pdf files are written to /app inside the
+    # container.  Mount a local folder to retrieve them from the host.
+    volumes:
+      - ./outputs:/app
